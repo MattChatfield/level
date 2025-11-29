@@ -1,0 +1,144 @@
+/* --- LEVEL HAIR AND BEAUTY STYLE --- */
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Defined brand colours for easy modification */
+    --color-primary: #303030;    /* Charcoal Grey */
+    --color-accent: #B38867;     /* Muted Gold/Bronze */
+    --color-text: #1A1A1A;       /* Near Black */
+    --color-background: #F5F5F5; /* Off-White */
+    --color-white: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--color-accent); /* Gold line accent */
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 3px; /* Adds impact, mimicking bold salon typography */
+}
+
+.header p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Container for Main Content */
+.content {
+    max-width: 700px; /* Slightly tighter width for focus */
+    margin: 30px auto;
+    padding: 30px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+}
+
+/* Content Headings and Text */
+.content h2 {
+    color: var(--color-accent);
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Contact Information Block */
+.contact-info {
+    margin: 35px 0;
+    padding: 25px;
+    border: 1px solid var(--color-accent); /* Gold border */
+    text-align: center;
+    background-color: #FAFAFA; /* Subtle lighter background */
+    border-radius: 4px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    text-align: center;
+}
+
+.contact-info a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+.follow-us {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 18px;
+    font-size: 0.85rem;
+}
+
+/* --- RESPONSIVENESS (Media Query) --- */
+
+/* For smaller screens (below 600px) */
+@media (max-width: 600px) {
+    
+    .header {
+        padding: 40px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .content {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+}
