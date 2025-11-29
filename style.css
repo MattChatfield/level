@@ -39,7 +39,7 @@ body {
     font-size: 2.8rem;
     margin-bottom: 5px;
     font-weight: 700;
-    letter-spacing: 3px; /* Adds impact, mimicking bold salon typography */
+    letter-spacing: 3px;
 }
 
 .header p {
@@ -50,7 +50,7 @@ body {
 
 /* Container for Main Content */
 .content {
-    max-width: 700px; /* Slightly tighter width for focus */
+    max-width: 700px; 
     margin: 30px auto;
     padding: 30px;
     background-color: var(--color-white);
@@ -79,7 +79,7 @@ body {
     padding: 25px;
     border: 1px solid var(--color-accent); /* Gold border */
     text-align: center;
-    background-color: #FAFAFA; /* Subtle lighter background */
+    background-color: #FAFAFA;
     border-radius: 4px;
 }
 
