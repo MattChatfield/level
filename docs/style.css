@@ -21,6 +21,8 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-background);
+	background-image: url("BG_textured.jpg");
+	background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
