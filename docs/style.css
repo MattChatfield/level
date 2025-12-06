@@ -16,6 +16,13 @@
     --color-white: #FFFFFF;
 }
 
+.squada-one-regular {
+  font-family: "Squada One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -31,7 +38,8 @@ body {
 /* Header Styling */
 .header {
     background-color: var(--color-primary);
-    color: var(--color-white);
+    font-family: 'Squada One', sans-serif;
+	color: var(--color-white);
     padding: 50px 20px;
     text-align: center;
     border-bottom: 5px solid var(--color-accent); /* Gold line accent */
@@ -63,7 +71,8 @@ body {
 
 /* Content Headings and Text */
 .content h2 {
-    color: var(--color-accent);
+    font-family: 'Squada One', sans-serif;
+	color: var(--color-accent);
     margin-bottom: 25px;
     font-size: 1.6rem;
     text-align: center;
