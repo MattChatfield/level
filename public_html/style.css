@@ -114,6 +114,54 @@ body {
     font-size: 0.85rem;
 }
 
+/* --- NEW STYLES FOR PROFILE BLOCKS AND IMAGES --- */
+
+/* Parent container for image and text details */
+.contact-block {
+    display: flex; /* Enables side-by-side layout */
+    align-items: center; /* Vertically aligns items */
+    gap: 20px; /* Space between the image and details */
+    margin-bottom: 40px; 
+    padding: 25px;
+    /* Resetting previous border and background for a cleaner block style */
+    border: 1px solid #e0e0e0; 
+    background-color: var(--color-white);
+    border-radius: 4px;
+}
+
+/* Image container styling */
+.profile-image {
+    flex: 0 0 120px; /* Fixed width for the image container */
+    overflow: hidden;
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid var(--color-accent); /* Gold border around the image */
+    height: 200px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* Scales and crops the image to cover the entire container */
+    object-fit: cover; 
+}
+
+/* Details container styling */
+.profile-details {
+    flex-grow: 1; /* Allows details block to take remaining space */
+}
+
+.profile-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--color-accent);
+}
+
+.profile-details p {
+    text-align: left; /* Ensures text inside details block is left-aligned */
+}
+
+
 /* --- RESPONSIVENESS (Media Query) --- */
 
 /* For smaller screens (below 600px) */
@@ -140,5 +188,20 @@ body {
 
     .content h2 {
         font-size: 1.4rem;
+    }
+	    /* Change profile layout to stack vertically on small screens */
+    .contact-block {
+        flex-direction: column; 
+        text-align: center; /* Center the stacked elements */
+        gap: 15px;
+    }
+
+    .profile-image {
+        flex: none; /* Remove fixed flex properties */
+        margin-bottom: 10px; 
+    }
+
+    .profile-details p {
+        text-align: center; /* Center text details on small screens */
     }
 }
